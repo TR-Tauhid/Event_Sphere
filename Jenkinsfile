@@ -20,6 +20,13 @@ pipeline {
             }
         }
 
+        stage('Generate App Key') {
+            steps {
+                bat 'copy .env.example .env'
+                bat 'php artisan key:generate'
+            }
+        }
+
         stage('Run Tests') {
             steps {
                 bat 'php artisan test'
