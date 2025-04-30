@@ -1,0 +1,14 @@
+.git
+.idea
+vendor/
+node_modules/
+bootstrap/cache/*
+storage/app/*
+storage/framework/*
+storage/logs/*
+.env.example
+phpunit.xml
+composer.lock
+package-lock.json
+Homestead.yaml
+Vagrantfile
