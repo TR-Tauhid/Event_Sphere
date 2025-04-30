@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git url: 'https://github.com/you/event-sphere.git', branch: 'main'
+                git url: 'https://github.com/TR-Tauhid/Event_Sphere.git', branch: 'main'
             }
         }
 
