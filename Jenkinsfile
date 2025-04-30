@@ -14,9 +14,21 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Install PHP Dependencies') {
             steps {
                 bat 'composer install'
+            }
+        }
+
+        stage('Install JS Dependencies') {
+            steps {
+                bat 'npm install'
+            }
+        }
+
+        stage('Build Assets with Vite') {
+            steps {
+                bat 'npm run build'
             }
         }
 
